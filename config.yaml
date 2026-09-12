@@ -1,0 +1,9 @@
+apiVersion: config.advfab.org/v1
+kind: Config
+currentContext: local
+contexts:
+  - name: local
+    cluster: development
+    providers: [cilium, frr]
+    observationAPI: https://observation.example.invalid/api/v1
+    identityProvider: cert-manager

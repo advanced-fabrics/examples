@@ -1,0 +1,9 @@
+apiVersion: networking.advfab.org/v1
+kind: AdvancedFabric
+metadata: {name: example}
+spec:
+  mode: observe-only
+  applyEnabled: false
+  providers:
+    - {name: cilium, capabilityPolicy: observe-only}
+    - {name: frr, capabilityPolicy: observe-only}
